@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+    background-image: url('./img/forest.jpg');
+    height: 100%;
+    width: 99%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size:auto;
+    font-family:serif;
+    color: white;
+    text-align: center;
+}
+    </style>
+    <style>
+         .centered-text {
+            width: 50%; /* Adjust width */
+            margin: 100px auto; /* Centers horizontally and moves down */
+            padding: 2%; /* Adjust padding */
+            text-align: center; /* Centers text inside */
+            background-color: white; /* Background color */
+            border: 5px solid black; /* Border color */
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+            font-size: 20px; /* Adjust text size */
+            font-family: Georgia, 'Times New Roman', Times, serif; /* Change font */
+            height: 50px; /* Ensure it stays a good size */
+            display: flex;
+            align-items: center; /* Vertical centering */
+            justify-content: center; /* Horizontal centering */
+            color: palevioletred;
+            font-weight: bold;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART 139</title>
+
+    <!-- Link to javascript file -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include site-specific JS -->
+    <script type="text/javascript" src="./js/main.js" defer></script>
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" type="text/css" href="./css/art.css">
+  
+</head>
+<body>
+    <main id="intro">
+        <section>
+            <h class="title">What Pokemon Are You?</h>
+            <div class="centered-text" id="typing-text"></div>
+        </section>
+        
+        <button id="start-btn">Continue</button>
+
+            <div id="room-container" style="display: none;">
+                <h2 id="room-name" style="font-size: 40px; font-style: bold; color: white;"></h2>
+                <div id="room-description" style="font-size: 25px; color: black;"></div>
+                <img id="room-image" src="" alt="Room Image" style="width: 40%; height: 40%; display: none; padding: 20px;">
+                <div id="options"></div>
+            </div>
+
+            <div id="end-credits" style="display: none; text-align: center; padding: 15px; background: black; color: white;">
+                <h2>🎉 Thank You for Playing! 🎉</h2>
+                <p>Created by Kimberly Estrada</p>
+                <p>Music by: MorningLightMusic on Youtube</p>
+                <p>Pokémon API by <a href="https://pokeapi.co/" target="_blank" style="color: lightblue;">PokéAPI</a></p>
+                <p>Game Developed in JavaScript & jQuery on Github</p>
+            </div>
+            
+
+        <div id="music-controls">
+            <button id="music-button" class="music-button">&#9658;</button> <!-- Play icon -->
+            <audio id="background-music" loop>
+                <source src="./audio/Upbeat Lofi Hip Hop Background Music For Videos [ ezmp3.cc ].mp3" type="audio/mpeg">
+            </audio>
+        </div>
+            
+
+        <div id="pokemon-container">
+            <div id="output"></div>
+            <button id="reset-btn" style="display: none;">Restart Quiz</button>
+        </div>
+    
+    
+
+    </main>
+
+</body>
+</html>
