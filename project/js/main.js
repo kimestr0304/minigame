@@ -74,7 +74,7 @@ const rooms = {
     quest5: {
         name: "Game Consoles",
         description: "What Console Do You Currently Own?",
-        image: "./img/consoles.jpg",
+        image: "./img/consoles.png",
         exitOptions: [
             { key: "quest6", text: "PlayStation 3/4/5", value: 5 },
             { key: "quest6", text: "Nintendo Switch or Switch Lite", value: 10 },
@@ -86,7 +86,7 @@ const rooms = {
     quest6:{
         name:"Chip Snacks",
         description:"Which Chip Snack Do You Like To Enjoy The Most?",
-        image:"",
+        image:"./img/chips.jpg",
         exitOptions:[
             {key: "quest7", text:"Cheetos - Cheese/Flaming Hot/Extreme Hot/Cheese Puffs/Flaming Hot Puffs", value: 20},
             {key: "quest7", text:"Lays - Barbeque/Limon/Chile and Lime/Original", value: 5},
@@ -99,12 +99,24 @@ const rooms = {
     quest7:{
         name:"Yearly Seasons",
         description: "What Season Do You Want To Last Forever?",
-        image:"",
+        image:"./img/seasons.jpg",
         exitOptions:[
             {key: "quest8", text:"Summer", value: 1},
             {key: "quest8", text:"Spring", value: 15},
             {key: "quest8", text:"Winter", value: 10},
             {key: "quest8", text:"Fall", value:20},
+        ]
+    },
+    quest8:{
+        name:"Favorite Cuisine",
+        description:"Which Food Cuisine Do You Prefer The Most?",
+        image:"./img/dish.jpg",
+        exitOptions: [
+            {key: "end", text:"Mexican",value:20},
+            {key: "end", text:"Thai",value:10},
+            {key: "end", text:"Chinese",value:5},
+            {key: "end", text:"Hawaiian",value:15},
+            {key: "end", text:"Indian",value:1},
         ]
     },
 
